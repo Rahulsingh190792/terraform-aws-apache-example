@@ -84,7 +84,7 @@ resource "aws_default_security_group" "default-sg" {
 }
 resource "aws_key_pair" "ssh-key" {
   key_name   = "server-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+jgGn3ghNT7WdaqQ9ZLdJL2FuijDvg7yfMFT5h6dWMNXKkGY8XAQ0ijLEtJlA8enoNlZbbUYvOHeYYjVZUIBs1w8NKfcUgbMqjyWCfNfPV4DKJ7wD/B0AwElMrfSdf+xQf188iOs6aAMzDtjTQFwJ+VFRYF9xoj9zcZ19lOZmhiNvZsPZAqtYHkaz5mGUEX42EmXP18lAMIRhQzyaCaoVNHJpYIgpBut1NrrNdvnpGQvZV8iPgHUttpAw+DdL6453+3NRXwVCnCtJTTVAbPIVE+HMFj46nuXx4rspaAZBCTWoLFQIFPSFHLmiMFNcch2O+st1brwcWcm/1ZTxmDDa60Hleb3r3aHqCmwdjmmn7xVJhT8L2co44a2j0gxzS/50EYmAvpob4lyGHNLq7auuQopCh8mDu++xKhDRWnZG/8DJEHJBSbUXklK95fapunNRPGds1t6boTOQStYApTHz+1gNFXawmS7DjGyZxdqlYFyo8cDeQT0sN2GM79QuDSE= z003ww7c@md1ywc2c"
+  public_key = var.public_key
 
 }
 resource "aws_instance" "myapp-server" {
