@@ -13,8 +13,6 @@ module "apache" {
   subnet_cidr_block = "10.0.10.0/24"
   avail_zone        = "eu-central-1a"
   env_prefix        = "dev"
-  #keep only necessary IPs
-  #my_ip = "178.191.165.151/32"
   my_ip         = "0.0.0.0/0"
   instance_type = "t2.micro"
   public_key = file(~/.ssh/authorized_keys)
