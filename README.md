@@ -1,3 +1,4 @@
+```hcl
 terraform {
 
 }
@@ -23,3 +24,4 @@ module "apache" {
 output "PublicIP" {
   value = module.apache.aws_ec2_public_ip
 }
+```
